@@ -160,13 +160,34 @@
 // console.log(abc);
 
 
-function sum(a) {
-  return function(b) {
-    if (b !== undefined) {
-      return sum(a + b);
-    }
-    return a;
-  };
-}
+// function sum(a) {
+//   return function(b) {
+//     if (b !== undefined) {
+//       return sum(a + b);
+//     }                                          // infinite currying
+//     return a;
+//   };
+// }
 
-console.log(sum(1)(2)(3)(4)()); 
+// console.log(sum(1)(2)(3)(4)()); 
+
+// console.log(2>1);
+// console.log(2!=1);
+
+// console.log( "2" > 1);
+
+// console.log( "02" > 1);
+
+console.log(null > 0);
+console.log(null == 0);
+console.log(null >= 0);
+
+console.log(undefined > 0);
+console.log(undefined == 0);
+console.log(undefined>= 0);
+
+
+// ===
+
+// console.log("2" === 2);
+// console.log("2" === "2");
